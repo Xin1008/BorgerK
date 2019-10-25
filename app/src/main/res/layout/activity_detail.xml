@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/ivImage2"
+        android:src="@drawable/image"
+        android:scaleType="centerCrop"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCart"
+        android:src="@drawable/ic_shopping_cart_black_24dp"
+        android:backgroundTint="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:useCompatPadding="true"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Title"
+        android:textSize="21sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:id="@+id/tvDescription" />
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/number_button"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="18dp"
+        app:textSize="8sp"
+        app:backGroundColor="@color/colorAccent"
+        app:initialNumber="1"
+        app:finalNumber="50"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart" />
+
+
+</LinearLayout>
